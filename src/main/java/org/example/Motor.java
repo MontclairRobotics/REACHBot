@@ -10,15 +10,51 @@ import com.pi4j.util.Console;
 
 public class Motor
 {
+    private double currentSpeed;
+
     public Motor(int pin)
-    {
+    {}
 
-    }
+    /**
+     * Set the speed of this motor [-1,1]
+     * @param value The speed from -1 (full reverse) to 1 (full forward).
+     *              0 is brake or coast depending on motor config.
+     */
+    public void setSpeed(double value)
+    { currentSpeed = value; }
+    /**
+     * Get the current speed of this motor [-1,1]
+     * @return The speed from -1 (full reverse) to 1 (full forward).
+     *         0 is brake or coast depending on motor config.
+     */
+    public double getSpeed()
+    { return currentSpeed; }
 
-    //The threshold which determines when a speed is neutral, proportional, or full.
+    /**
+     * Sets the speed of the motor to zero, either braking
+     * or coasting it.
+     */
+    public void neutralize()
+    { currentSpeed = 0; }
+
+    /**
+     * Updates the status of the pwm output.
+     * UNIMPLEMENTED
+     */
+    public void updatePwm()
+    { /*sus*/ }
+
+    /**
+     * The threshold which determines when a speed is neutral, proportional, or full.
+     */
     public static final double kSpeedErr = 0.05d;
 
-    //Get the PWM pulse width for a given speed.
+    /**
+     * Get the PWM pulse width for a given speed.
+     * @param speed The speed from -1 (full reverse) to 1 (full forward).
+     *              0 is brake or coast depending on motor config.
+     * @return The pulse width associated with the SparkMAX controller.
+     */
     public static double GetPulseWidth(double speed)
     {
         if(speed > kSpeedErr)
@@ -48,7 +84,13 @@ public class Motor
             return 1500; //neutral
         }
     }
-    //Get the PWM duty cycle for a given speed.
+
+    /**
+     * Get the PWM duty cycle for a given speed.
+     * @param speed The speed from -1 (full reverse) to 1 (full forward).
+     *              0 is brake or coast depending on motor config.
+     * @return The duty cycle associated with the SparkMAX controller.
+     */
     public static double GetDutyCycle(double speed)
     {
         if(speed > kSpeedErr)
