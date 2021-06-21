@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e18edcfe-2b1d-4374-b649-9f3035e9efb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../REACHBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../REACHBot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

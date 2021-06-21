@@ -57,7 +57,6 @@ def main():
         hat.channels[ch].duty_cycle = spMAXThrottleToDuty(0)
 
     while True:
-        cmd = None
 
         # to avoid a warning for the 'except BaseException':
         # noinspection PyBroadException
