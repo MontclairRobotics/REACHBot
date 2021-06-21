@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="REACHBot" options="--add-exports com.pi4j/com.pi4j.io.gpio=org.example.REACHBot" />
+      <module name="REACHBot" options="" />
     </option>
   </component>
 </project>
