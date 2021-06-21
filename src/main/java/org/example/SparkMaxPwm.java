@@ -35,14 +35,20 @@ public class SparkMaxPwm implements Motor
      * @param speed The speed from -1 (full reverse) to 1 (full forward).
      *              0 is brake or coast depending on motor config.
      * @return The pulse width associated with the SparkMAX controller.
+     *
      */
-    public static double getPulseTime(double speed)
+    public static double getPulseTime(double speed) throws Exception
     {
+        if(speed > 1 || speed < -1)
+        {
+            return -1;
+        }
+
         if(speed > kSpeedErr)
         {
             if(speed > 1 - kSpeedErr)
             {
-                return 1750; //proportional forward
+                return 1500 + speed * 500; //proportional forward
             }
             else
             {
@@ -53,7 +59,7 @@ public class SparkMaxPwm implements Motor
         {
             if(speed < -1 + kSpeedErr)
             {
-                return 1250; //proportional backward
+                return 1500 + speed * 500; //proportional backward
             }
             else
             {
