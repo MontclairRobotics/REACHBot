@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="JInputJoystickTestV2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JInputJoystickTestV2.zip!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../JInputJoystickTestV2.zip!/JInputJoystickTestV2/jinput/jinput_coreapi_javadoc/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../JInputJoystickTestV2.zip!/JInputJoystickTestV2/src" />
+    </SOURCES>
+  </library>
+</component>

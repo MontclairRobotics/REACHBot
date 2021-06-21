@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/REACHBot.iml" filepath="$PROJECT_DIR$/REACHBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/REACHBot.iml" filepath="$PROJECT_DIR$/REACHBot.iml" group="REACHBot" />
     </modules>
   </component>
 </project>
