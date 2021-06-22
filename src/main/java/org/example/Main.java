@@ -40,7 +40,7 @@ public class Main {
         while(!escape){
             Robot.robotPeriodic();
         }
-    }` `
+    }
 
     private void run(Context pi4j) throws Exception {
         Platforms platforms = pi4j.platforms();
